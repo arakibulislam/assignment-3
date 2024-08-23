@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind & daisyui cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- fontawesome cdn -->
+    <script src="https://kit.fontawesome.com/6ab963381c.js" crossorigin="anonymous"></script>
+    <!-- tailwind config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        primary: 'rgb(171, 239, 95)',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- style -->
+    <style>
+        .monrop {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
+
+    <title>Rinterio</title>
+
+</head>
+
+<body class="monrop bg-gray-100">
+    <header class="container mx-auto">
+        <!-- navbar section -->
+        <nav>
+            <div class="navbar justify-evenly bg-gray-100">
+                <div class="navbar-start justify-between">
+                    <div>
+                        <a href="">
+                            <i class="fa-solid fa-arrow-right -rotate-45 bg-primary rounded-full p-1 "></i>
+                        </a>
+                        <a class=" text-xl lg:text-2xl font-extrabold p-1">
+                            Rinterio
+                        </a>
+                    </div>
+                    <div class="dropdown">
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow ">
+                            <li><a>Home</a></li>
+                            <li><a>Service</a></li>
+                            <li><a>Portfolio</a></li>
+                            <li><a>Blogs</a></li>
+                            <li><a>Contact Us</a></li>
+                        </ul>
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidde ">
+                            <i class="fa-solid fa-bars rounded-full bg-white p-2 lg:hidden"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-gray-600">
+                        <li><a>Home</a></li>
+                        <li><a>Service</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="navbar-end hidden md:flex">
+                    <a class="mr-4" href="">
+                        <i class="fa-solid fa-magnifying-glass text-xl  bg-white rounded-full p-2 "></i>
+                    </a>
+                    <a class="mr-4" href="">
+                        <i class="fa-solid fa-cart-shopping text-xl bg-white rounded-full p-2"></i>
+                    </a>
+                    <a class="btn bg-[#ABEF5F] rounded-3xl text-lg font-extrabold px-5">
+                        Book Consult
+                        <i class="fa-solid fa-arrow-right -rotate-45 bg-black rounded-full p-1 text-white p-2 "></i>
+                    </a>
+                </div>
+
+            </div>
+        </nav>
+        <!-- banner section -->
+        <section>
+            <div class="hero pb-20">
+                <div class="hero-content flex-col ">
+                    <img src="./assets/banner.png" class="w-1/2" />
+                    <div class="text-center">
+                        <h1 class="text-6xl font-extrabold">A barn house of this design has a <br> striking appearance</h1>
+                        <p class="my-10 w-2/3 mx-auto">
+                            The barn house captivates with its blend of rustic charm and modern sophistication,
+                            featuring weathered wood, sleek metal accents, and large windows that flood the space with
+                            natural light.
+                        </p>
+                        <button class="btn rounded-3xl text-lg bg-[#acef5f7c]">Get Started
+                            <i class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] rounded-full p-1  p-2 "></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+</body>
+
+</html>
